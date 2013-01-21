@@ -1,0 +1,71 @@
+@basefont: 14;
+
+.font-size (@target: @basefont, @default: @basefont) {
+    font-size: (@target / @default) + 0em;
+}
+
+.line-height (@fontsize, @lineheight) {
+    line-height: (@lineheight / @fontsize) + 0em;
+}
+
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.serif {
+    font-family: 'Helvetica', 'Arial', 'Verdana', sans-serif;
+}
+
+.sans-serif {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+}
+
+/* Text Offset - for screen readers and SEO */
+/************************/
+
+.text-offset {
+    text-indent: -999em;
+}
+/* Clearfix */
+/************************/
+
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@white: #fff;
+@black: #000;
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    position: relative;
+    .serif;
+    .font-size(14,16);
+    .line-height(14,16);
+    font-style:normal;
+    font-weight:400;
+    text-transform:none;
+    letter-spacing:normal;
+    text-align:left;
+    background:@white;
+    color:@black;
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+  color: #666;
+}

@@ -1,0 +1,36 @@
+/* =Grid
+-------------------------------------------------------------- */
+
+// Default 940px grid
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+
+.gridColumns(@columns: 1) {
+    width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+    //display:inline;
+    float:left;
+    margin:@gridGutterWidth / 2;
+    position:relative;
+}
+
+#mainWrap{
+    width:960px;
+    margin:auto;
+}
+
+.grid1{ .gridColumns(1); }
+.grid2{ .gridColumns(2); }
+.grid3{ .gridColumns(3); }
+.grid4{ .gridColumns(4); }
+.grid5{ .gridColumns(5); }
+.grid6{ .gridColumns(6); }
+.grid7{ .gridColumns(7); }
+.grid8{ .gridColumns(8); }
+.grid9{ .gridColumns(9); }
+.grid10{ .gridColumns(10); }
+.grid11{ .gridColumns(11); }
+.grid12{ .gridColumns(12); }
