@@ -10,8 +10,8 @@
     <div class="clearFloat">&nbsp;</div>
     
 	<script type="text/javascript">
-		var BASE_URL = "<?php //echo get_bloginfo('url'); ?>";
-		var TEMPLATE_URL = "<?php //echo get_bloginfo('template_url'); ?>";
+		var BASE_URL = "<?php echo get_bloginfo('url'); ?>";
+		var TEMPLATE_URL = "<?php echo get_bloginfo('template_url'); ?>";
 	</script>
     <script src="assets/js/site.min.js" type="text/javascript" charset="utf-8"></script>
 </body>

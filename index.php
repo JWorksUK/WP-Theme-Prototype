@@ -1,7 +1,4 @@
-<?php
-    include 'functions.php';
-    get_header( "home" );
-?>  
+<?php get_header(); ?>
     <div class="grid12">
         <div class="copy-section">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis erat tellus. Quisque ac lectus mauris. Nam quis risus dolor, non condimentum risus. Vestibulum scelerisque, nisi id ullamcorper lacinia, massa mauris fermentum quam, nec sollicitudin leo neque ut magna. Maecenas congue cursus lacinia. Sed at nunc eget lacus rutrum pretium. Donec a justo augue, quis mollis ipsum.</p>

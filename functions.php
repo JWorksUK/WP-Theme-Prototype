@@ -10,39 +10,5 @@
 
     // -------------------------------------------------------------------------
     
-    function get_bloginfo( $field )
-    {
-        if ( $field == "url" ) :
-            if ( isset( $_SERVER['SERVER_ADDR'] ) && $_SERVER['SERVER_ADDR'] == '127.0.0.1' )
-            {
-                return "http://www.local.dev";
-            }
-            else
-            {
-                return "http://www.local.com";
-            }
-        endif;
-    }
-
-    function get_header( $section = '' )
-    {
-        include 'header.php';
-    }
-    
-    function get_footer()
-    {
-        include 'footer.php';
-    }
-    
-    function get_sidebar()
-    {
-        include 'sidebar.php';
-    }
-    
-    function pre( $var )
-    {
-        echo "<pre>";
-        print_r( $var );
-        echo "</pre>";
-    }
+    require_once 'inc/faux-wordpress.php';
 ?>
