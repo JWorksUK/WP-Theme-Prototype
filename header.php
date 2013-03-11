@@ -6,7 +6,7 @@
 	<!--Google Webmaster Tools Verification Code-->
 	<meta name="google-site-verification" content="" />
 
-	<title>XXX</title>
+	<title><?php bloginfo('name'); ?></title>
 
 	<link rel="stylesheet" href="assets/css/style.min.css" type="text/css" media="screen" />
 </head>

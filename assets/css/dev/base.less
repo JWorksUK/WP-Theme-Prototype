@@ -1,17 +1,7 @@
 @basefont: 14;
 
-.font-size (@target: @basefont, @default: @basefont) {
-    font-size: (@target / @default) + 0em;
-}
-
-.line-height (@fontsize, @lineheight) {
-    line-height: (@lineheight / @fontsize) + 0em;
-}
-
-.border-radius (@radius: 5px) {
-  border-radius: @radius;
-  -moz-border-radius: @radius;
-  -webkit-border-radius: @radius;
+.hel-serif {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .serif {
@@ -52,9 +42,11 @@ html {
 
 body {
     position: relative;
-    .serif;
-    .font-size(14,16);
-    .line-height(14,16);
+    .hel-serif;
+    //.font-size(14,16);
+    //.line-height(14,20);
+    font-size:14px;
+    line-height:20px;
     font-style:normal;
     font-weight:400;
     text-transform:none;

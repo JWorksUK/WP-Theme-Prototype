@@ -4,6 +4,7 @@
 @import "grid.less";
 @import "wordpress.less";
 @import "generic.less";
+@import "mixins.less";
 
 /* =Header
 -------------------------------------------------------------- */
@@ -36,10 +37,12 @@
 .copy-section{
     padding:15px 0 0;
 
+    small{
+        font-size:85%;
+    }
+
     p{
-        padding-bottom:14px;
-        line-height:18px;
-        font-size:14px;
+        margin:0 0 14px;
 
         span{
             color:#30a0cf;
@@ -50,21 +53,50 @@
         margin-bottom:14px;
     }
 
-    h1{font-size:48px;}
-    h2{font-size:36px;}
-    h3{font-size:22px;}
-    h4{font-size:18px;}
-    h6{font-size:10px;}
     h1, h2, h3, h4, h5, h6{
-        line-height:1.2em;
-        padding-bottom:5px;
+        line-height:20px;
+        margin:10px 0;
+        font-weight:700;
+        text-rendering:optimizelegibility;
     }
 
+    h1, h2, h3{
+        line-height: 40px;
+    }
+
+    h1{ font-size:38px; }
+    h2{ font-size:32px; }
+    h3{ font-size:24px; }
+    h4{ font-size:18px; }
+    h4{ font-size:14px; }
+    h6{ font-size:12px; }
+
     blockquote{
-        margin:10px 0 0 10px;
-        padding-left:10px;
-        border-left:1px solid #fff;
-        font-size:22px;
+        .clearfix;
+        border-left:5px solid #eee;
+        padding:0 0 0 15px;
+        margin-bottom:5px;
+
+        p{
+            font-weight:300;
+            font-size:18px;
+            line-height:1.25;
+            margin-bottom:0;
+        }
+
+        small{
+            color:#999;
+            display:block;
+            line-height:20px;
+
+            &:before{
+                content:"— ";
+            }
+        }
+
+        cite{
+            font-style:normal;
+        }
     }
 
     table{
@@ -107,4 +139,15 @@
     sub{top:0.5ex;}
     sup, sub{font-size: 0.8em;height:0;position:relative;vertical-align:baseline;}
     abbr, acronym{border-bottom:1px dotted #666;cursor:help;}
+
+    pre{
+        .rounded-corners;
+        .wrap;
+        background-color:#f5f5f5;
+        border:1px solid #ccc;
+        font-size:13px;
+        line-height:20px;
+        margin:0 0 10px;
+        padding:10px;
+    }
 }

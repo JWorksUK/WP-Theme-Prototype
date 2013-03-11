@@ -2,7 +2,7 @@
 		</div><!--end contentWrapper-->
 		
 		<div id="footer">
-            <p class="copyright">All Content Copyright &copy; XXXX <?php echo date('Y'); ?>. All Rights Reserved.
+            <p class="copyright">All Content Copyright &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. All Rights Reserved.
                 <span class="siteby">Site developed by: <a target="_blank" href="http://www.jworksuk.com/">JWorksUK</a></span>
             </p>
         </div>

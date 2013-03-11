@@ -1,0 +1,22 @@
+.font-size (@target: @basefont, @default: @basefont) {
+    font-size: (@target / @default) + 0em;
+}
+
+.line-height (@fontsize, @lineheight) {
+    line-height: (@lineheight / @fontsize) + 0em;
+}
+
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.wrap () {
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+}
